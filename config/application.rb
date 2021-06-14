@@ -21,5 +21,7 @@ module PandaDepot
 
     config.active_record.schema_format = :sql
     config.time_zone = "UTC"
+
+    ActiveRecord::SchemaDumper.ignore_tables = ["sqlite_sequence"]
   end
 end

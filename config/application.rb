@@ -20,5 +20,6 @@ module PandaDepot
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.active_record.schema_format = :sql
+    config.time_zone = "UTC"
   end
 end

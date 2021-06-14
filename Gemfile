@@ -42,6 +42,7 @@ group :development do
   gem "rubocop", ">= 1.14.0"
   gem "rubocop-performance", ">= 1.11.2"
   gem "rubocop-rake", ">= 0.5.0"
+  gem "rubocop-rails", ">= 0.1.0"
   gem "rubocop-rspec", ">= 2.3.0"
   gem "rubycritic", ">= 4.6.0"
   gem "simplecov", ">= 0.20.0"

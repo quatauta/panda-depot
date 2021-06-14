@@ -31,10 +31,26 @@ group :development do
   gem 'rack-mini-profiler', '>= 2.0' # Display performance information such as SQL time and flame graphs for each request in your browser. Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'listen', '>= 3.3'
   gem 'spring' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+
+  gem "brakeman", "~> 5.0"
+  gem "bundler-audit", ">= 0.8.0"
+  gem "bundler-leak", ">= 0.2.0"
+  gem "fasterer", ">= 0.9.0"
+  gem "libyear-bundler", ">= 0.5.0"
+  gem "rspec", ">= 3.10.0"
+  gem "rspec_junit_formatter", ">= 0.4.0"
+  gem "rubocop", ">= 1.14.0"
+  gem "rubocop-performance", ">= 1.11.2"
+  gem "rubocop-rake", ">= 0.5.0"
+  gem "rubocop-rspec", ">= 2.3.0"
+  gem "rubycritic", ">= 4.6.0"
+  gem "simplecov", ">= 0.20.0"
+  gem "standard", ">= 1.1.1"
 end
 
 group :test do
   gem 'capybara', '>= 3.26' # Adds support for Capybara system testing and selenium driver
+  gem "haml-lint", ">= 0.999"
   gem 'selenium-webdriver'
   gem 'webdrivers' # Easy installation and use of web drivers to run system tests with browsers
 end

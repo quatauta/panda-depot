@@ -1,0 +1,8 @@
+# .stylelintrc.yml - See https://stylelint.io/user-guide/configure
+
+extends: stylelint-config-standard
+rules:
+  color-hex-length: ~
+  at-rule-no-unknown:
+    - true
+    - { ignoreAtRules: ["screen"] }

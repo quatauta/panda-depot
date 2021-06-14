@@ -1,0 +1,71 @@
+---
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - standard
+
+inherit_gem:
+  standard: config/base.yml
+  rubocop-performance: config/default.yml
+  rubocop-rails: config/default.yml
+  rubocop-rake: config/default.yml
+  rubocop-rspec: config/default.yml
+
+AllCops:
+  NewCops: enable
+  DisabledByDefault: false
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/**/*'
+
+Layout/ClassStructure:
+  Enabled: true
+
+Lint/HeredocMethodCallPosition:
+  Enabled: true
+
+Lint/NumberConversion:
+  Enabled: true
+  IgnoredMethods:
+    - hour
+
+Metrics/BlockLength:
+  ExcludedMethods: ["describe", "context", "let"]
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/ConstantVisibility:
+  Enabled: true
+
+Style/DateTime:
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Enabled: true
+
+Style/IpAddresses:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: true
+
+Style/ReturnNil:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+
+Style/SingleLineBlockParams:
+  Enabled: true
+
+Style/StringHashKeys:
+  Enabled: true

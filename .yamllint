@@ -1,0 +1,13 @@
+# vim:syntax=yaml:
+
+extends: relaxed
+
+ignore: |
+  node_modules/
+  public/
+  resources/
+
+rules:
+  line-length:
+    max: 200
+    level: warning

@@ -18,7 +18,8 @@ AllCops:
   NewCops: enable
   DisabledByDefault: false
   Exclude:
-    - 'db/**/*'
+    - 'db/migrations/*.rb'
+    - 'db/schema.rb'
     - 'vendor/**/*'
 
 I18n/RailsI18n:

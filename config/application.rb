@@ -19,9 +19,6 @@ module PandaDepot
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.active_record.schema_format = :sql
     config.time_zone = "UTC"
-
-    ActiveRecord::SchemaDumper.ignore_tables = ["sqlite_sequence"]
   end
 end

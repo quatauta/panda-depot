@@ -1,27 +1,22 @@
-%h1 Listing products
+- if notice
+  %aside#notice= notice
+
+%h1 Products
 
 %table
-  %thead
+  %tfoot
     %tr
-      %th Title
-      %th Description
-      %th Image url
-      %th Price
-      %th
-      %th
-      %th
-
+      %td{colspan: 3}= link_to('New Product', new_product_path)
   %tbody
     - @products.each do |product|
-      %tr
-        %td= product.title
-        %td= product.description
-        %td= product.image_url
-        %td= product.price
-        %td= link_to 'Show', product
-        %td= link_to 'Edit', edit_product_path(product)
-        %td= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }
+      %tr{class: cycle("list_line_odd", "list_line_even")}
+        %td.image= image_tag(product.image_url, class: "list_image")
+        %td.description
+          %h1= product.title
+          %p= truncate(strip_tags(product.description), length: 80)
+        %td.actions
+          %ul
+            %li= link_to "Show", product
+            %li= link_to "Edit", edit_product_path(product)
+            %li= link_to "Destroy", product, method: :delete, data: { confirm: "Are you sure?" }
 
-%br
-
-= link_to 'New Product', new_product_path

@@ -41,6 +41,7 @@ group :development do
   gem "rspec_junit_formatter", ">= 0.4.0"
   gem "rubocop", ">= 1.14.0"
   gem "rubocop-performance", ">= 1.11.2"
+  gem "rubocop-i18n", ">= 3.0.0"
   gem "rubocop-rake", ">= 0.5.0"
   gem "rubocop-rails", ">= 0.1.0"
   gem "rubocop-rspec", ">= 2.3.0"

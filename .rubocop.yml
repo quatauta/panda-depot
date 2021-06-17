@@ -1,5 +1,6 @@
 ---
 require:
+  - rubocop-i18n
   - rubocop-performance
   - rubocop-rails
   - rubocop-rake
@@ -20,6 +21,9 @@ AllCops:
     - 'db/**/*'
     - 'vendor/**/*'
 
+I18n/RailsI18n:
+  Enabled: true
+
 Layout/ClassStructure:
   Enabled: true
 
@@ -30,6 +34,9 @@ Lint/NumberConversion:
   Enabled: true
   IgnoredMethods:
     - hour
+
+Metrics:
+  Enabled: true
 
 Metrics/BlockLength:
   ExcludedMethods: ["describe", "context", "let"]

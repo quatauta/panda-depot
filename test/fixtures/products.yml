@@ -1,13 +1,20 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  image_url: MyString
+  title: Product One
+  description: Description of product one
+  image_url: lorem.jpg
   price: 9.99
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title: Product Two
+  description: Description of product two
+  image_url: lorem.jpg
+  price: 8.88
+
+ruby:
+  title: Programming Ruby 3.0
+  description:
+    Ruby is the fastest growing and most exiting dynamic languate out there. If you need to get working programs delivered fast, you should add Ruby to your toolbox.
+  price: 49.50
+  image_url: ruby.jpg

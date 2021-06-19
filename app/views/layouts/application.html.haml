@@ -2,12 +2,26 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title PandaDepot
+    %title The Pragmatic Panda Books Online Store
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %main{class: controller.controller_name}
-      = yield
+    %header.main
+      = image_tag 'logo.svg', alt: 'The Pragmatic Panda Bookshelve'
+      %h1= @page_title
+    %section.content
+      %nav.side_nav
+        %ul
+          %li
+            %a(href='/') Home
+          %li
+            %a(href='/questions') Questions
+          %li
+            %a(href='/news') News
+          %li
+            %a(href='/contact') Contact
+      %main{class: controller.controller_name}
+        = yield

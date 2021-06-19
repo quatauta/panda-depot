@@ -1,0 +1,11 @@
+- if notice
+  %aside#notice= notice
+
+%h1 Your Panda Catalog
+%ul.catalog
+  - @products.each do |product|
+    %li
+      = image_tag(product.image_url)
+      %h2= product.title
+      %p= sanitize(product.description)
+      #price= product.price

@@ -28,6 +28,10 @@ header.main {
   h1 {
     display: none;
   }
+  a, a:hover {
+    background: none;
+    text-decoration: none;
+  }
 }
 .content {
   margin: 0;

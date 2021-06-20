@@ -10,7 +10,7 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header.main
-      = image_tag 'logo.svg', alt: 'The Pragmatic Panda Bookshelve'
+      %a.logo(href='/')= image_tag 'logo.svg', alt: 'The Pragmatic Panda Bookshelve'
       %h1= @page_title
     %section.content
       %nav.side_nav

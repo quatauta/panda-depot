@@ -2,16 +2,16 @@
 
 %p
   %b Title:
-  = @product.title
+  .title= @product.title
 %p
   %b Description:
-  = @product.description
+  .description= @product.description
 %p
   %b Image url:
-  = @product.image_url
+  .image_url= @product.image_url
 %p
   %b Price:
-  = @product.price
+  .price= @product.price
 
 = link_to 'Edit', edit_product_path(@product)
 \|

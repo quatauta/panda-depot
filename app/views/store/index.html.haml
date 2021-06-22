@@ -2,6 +2,8 @@
   %aside#notice= notice
 
 %h1 Your Panda Catalog
+- if @counter > 5
+  = pluralize(@counter, "view")
 %ul.catalog
   - cache @products do
     - @products.each do |product|

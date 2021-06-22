@@ -10,4 +10,6 @@
           = image_tag(product.image_url)
           %h2= product.title
           %p= sanitize(product.description)
-          .price= number_to_currency(product.price)
+          .price
+            = number_to_currency(product.price)
+            = button_to "Add to Cart", line_items_path(product_id: product)

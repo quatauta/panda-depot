@@ -1,6 +1,7 @@
-%p#notice= notice
+- if notice
+  %aside#notice= notice
 
-
-= link_to 'Edit', edit_cart_path(@cart)
-\|
-= link_to 'Back', carts_path
+%h2 Your Pragmatic Panda Cart
+%ul
+  - @cart.line_items.each do |item|
+    %li= item.product.title

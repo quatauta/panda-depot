@@ -23,7 +23,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     follow_redirect!
 
     assert_select "h2", "Your Pragmatic Panda Cart"
-    assert_select "li", "Programming Ruby 3.0"
+    assert_select "li", "1 × Programming Ruby 3.0"
   end
 
   test "should show line_item" do

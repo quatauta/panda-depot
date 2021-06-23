@@ -4,4 +4,4 @@
 %h2 Your Pragmatic Panda Cart
 %ul
   - @cart.line_items.each do |item|
-    %li= item.product.title
+    %li= "%{quantity} × %{product_title}" % {quantity: item.quantity, product_title: item.product.title}

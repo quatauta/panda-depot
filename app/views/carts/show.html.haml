@@ -2,6 +2,20 @@
   %aside#notice= notice
 
 %h2 Your Pragmatic Panda Cart
-%ul
+%table
+  %thead
+    %th Qty
+    %th Title
+    %th Unit price
+    %th Amount
   - @cart.line_items.each do |item|
-    %li= "%{quantity} × %{product_title}" % {quantity: item.quantity, product_title: item.product.title}
+    %tr
+      %td.quantity= item.quantity
+      %td.title= item.product.title
+      %td.price= number_to_currency(item.product.price)
+      %td.price= number_to_currency(item.total_price)
+  %tfoot
+    %th(colspan=3) Total:
+    %th.price= number_to_currency(@cart.total_price)
+
+= button_to "Empty cart", @cart, method: :delete, data: {confirm: "Are you sure?"}

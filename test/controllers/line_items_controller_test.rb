@@ -26,6 +26,21 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     assert_select "td", "Programming Ruby 3.0"
   end
 
+  test "should capture product price" do
+    old_price = products(:ruby).price
+    new_price = old_price * 2
+    post line_items_url, params: {product_id: products(:ruby).id}
+    products(:ruby).price = new_price
+    products(:ruby).save!
+    post line_items_url, params: {product_id: products(:ruby).id}
+
+    follow_redirect!
+
+    assert_select "td", "Programming Ruby 3.0"
+    assert_select "td.price", /\$#{old_price}/
+    assert_select "td.price", /\$#{new_price}/
+  end
+
   test "should show line_item" do
     get line_item_url(@line_item)
     assert_response :success

@@ -5,6 +5,7 @@
     %tr
       %th Product
       %th Cart
+      %th Price
       %th
       %th
       %th
@@ -14,6 +15,7 @@
       %tr
         %td= line_item.product
         %td= line_item.cart
+        %td= line_item.price
         %td= link_to 'Show', line_item
         %td= link_to 'Edit', edit_line_item_path(line_item)
         %td= link_to 'Destroy', line_item, method: :delete, data: { confirm: 'Are you sure?' }

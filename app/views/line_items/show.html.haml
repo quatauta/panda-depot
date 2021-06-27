@@ -6,6 +6,9 @@
 %p
   %b Cart:
   = @line_item.cart
+%p
+  %b Price:
+  = @line_item.price
 
 = link_to 'Edit', edit_line_item_path(@line_item)
 \|

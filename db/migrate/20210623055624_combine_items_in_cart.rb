@@ -1,4 +1,21 @@
 class CombineItemsInCart < ActiveRecord::Migration[6.1]
+  # https://jakeyesbeck.com/2021/04/10/avoid-models-in-migrations/
+  #
+  # Temporary "in-line" Cart model at the time of adding the migration. Defining the model
+  # in the migration prevents issues in case the Cart model gets renamed in the future.
+  class Cart < ApplicationRecord
+    has_many :line_items, dependent: :destroy
+  end
+
+  # https://jakeyesbeck.com/2021/04/10/avoid-models-in-migrations/
+  #
+  # Temporary "in-line" LineItem model at the time of adding the migration. Defining the model
+  # in the migration prevents issues in case the LineItem model gets renamed in the future.
+  class LineItem < ApplicationRecord
+    belongs_to :product
+    belongs_to :cart
+  end
+
   # Replace multiple line items for a single product in a cart with a single item and
   # according quantity
   def up

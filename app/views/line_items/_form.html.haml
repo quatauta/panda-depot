@@ -1,9 +1,9 @@
-= form_for @line_item do |f|
-  - if @line_item.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@line_item.errors.count, "error")} prohibited this line_item from being saved:"
+= form_for line_item do |f|
+  - if line_item.errors.any?
+    #error-explanation
+      %h2= #{pluralize(line_item.errors.count, "error")} prohibited this line_item from being saved:
       %ul
-        - @line_item.errors.full_messages.each do |message|
+        - line_item.errors.full_messages.each do |message|
           %li= message
 
   .field
@@ -16,4 +16,4 @@
     = f.label :price
     = f.text_field :price
   .actions
-    = f.submit 'Save'
+    = f.submit "Save"

@@ -1,27 +1,27 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "text/html; charset=UTF-8", http_equiv: "Content-Type"}/
     %title The Pragmatic Panda Books Online Store
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_pack_tag "application", "data-turbolinks-track": "reload"
   %body
     %header.main
-      %a.logo(href='/')= image_tag 'logo.svg', alt: 'The Pragmatic Panda Bookshelve'
+      %a.logo{href: "/"}= image_tag "logo.svg", alt: "The Pragmatic Panda Bookshelve"
       %h1= @page_title
     %section.content
       %nav.side_nav
         %ul
           %li
-            %a(href='/') Home
+            %a{href: "/"} Home
           %li
-            %a(href='/questions') Questions
+            %a{href: "/questions"} Questions
           %li
-            %a(href='/news') News
+            %a{href: "/news"} News
           %li
-            %a(href='/contact') Contact
+            %a{href: "/contact"} Contact
       %main{class: controller.controller_name}
         = yield

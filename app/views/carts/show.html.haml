@@ -15,7 +15,7 @@
       %td.price= number_to_currency(item.price)
       %td.price= number_to_currency(item.total_price)
   %tfoot
-    %th(colspan=3) Total:
+    %th{colspan: 3} Total:
     %th.price= number_to_currency(@cart.total_price)
 
 = button_to "Empty cart", @cart, method: :delete, data: {confirm: "Are you sure?"}

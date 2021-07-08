@@ -40,7 +40,7 @@ Metrics:
   Enabled: true
 
 Metrics/BlockLength:
-  ExcludedMethods: ["describe", "context", "let"]
+  IgnoredMethods: ["describe", "context", "let"]
 
 Style/AutoResourceCleanup:
   Enabled: true

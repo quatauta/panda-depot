@@ -6,7 +6,7 @@
 %table
   %tfoot
     %tr
-      %td{colspan: 3}= link_to('New Product', new_product_path)
+      %td{colspan: 3}= link_to("New Product", new_product_path)
   %tbody
     - @products.each do |product|
       %tr{class: cycle("list_line_odd", "list_line_even")}
@@ -18,5 +18,5 @@
           %ul
             %li= link_to "Show", product
             %li= link_to "Edit", edit_product_path(product)
-            %li= link_to "Destroy", product, method: :delete, data: { confirm: "Are you sure?" }
+            %li= link_to "Destroy", product, method: :delete, data: {confirm: "Are you sure?"}
 

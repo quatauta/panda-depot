@@ -9,6 +9,9 @@
 %p
   %b Price:
   = @line_item.price
+%p
+  %b Quantity:
+  = @line_item.quantity
 
 = link_to "Edit", edit_line_item_path(@line_item)
 \|

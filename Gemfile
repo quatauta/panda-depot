@@ -24,6 +24,7 @@ gem "webpacker", "~> 5.2" # Transpile app-like JavaScript. Read more: https://gi
 
 group :development, :test do
   gem "brakeman", ">= 5.0", require: false
+  gem "bullet", "~> 6.1"
   gem "bundler-audit", ">= 0.8", require: false
   gem "bundler-leak", ">= 0.2", require: false
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console

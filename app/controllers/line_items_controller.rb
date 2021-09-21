@@ -5,7 +5,7 @@ class LineItemsController < ApplicationController
 
   # GET /line_items or /line_items.json
   def index
-    @line_items = LineItem.all
+    @line_items = LineItem.includes([:cart], [:product]).all
   end
 
   # GET /line_items/1 or /line_items/1.json

@@ -68,6 +68,9 @@ GEM
       msgpack (~> 1.0)
     brakeman (5.1.1)
     builder (3.2.4)
+    bullet (6.1.5)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     bundler-audit (0.8.0)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
@@ -263,6 +266,7 @@ GEM
     tzinfo-data (1.2021.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.0.0)
+    uniform_notifier (1.14.2)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -291,6 +295,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (~> 1.7)
   brakeman (>= 5.0)
+  bullet (~> 6.1)
   bundler-audit (>= 0.8)
   bundler-leak (>= 0.2)
   byebug
@@ -329,4 +334,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.26
+   2.2.27

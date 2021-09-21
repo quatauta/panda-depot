@@ -62,7 +62,13 @@ class CartsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_cart
-    @cart = Cart.find(params[:id])
+    case action_name
+    when "show"
+      # Avoid n+1 queries in #show reported by bullet gem
+      @cart = Cart.includes(line_items: [:product]).find(params[:id])
+    else
+      @cart = Cart.find(params[:id])
+    end
   end
 
   # Only allow a list of trusted parameters through.

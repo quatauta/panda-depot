@@ -1,0 +1,7 @@
+[project]
+id = "io.gitlab.quatauta.panda-depot"
+name = "Panda Depot"
+version = "0.0.1"
+
+[[build.buildpacks]]
+uri = "heroku/ruby"

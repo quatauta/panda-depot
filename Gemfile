@@ -31,12 +31,12 @@ group :development, :test do
   gem "fasterer", ">= 0.9", require: false
   gem "haml-lint", ">= 0.999", require: false
   gem "libyear-bundler", ">= 0.5", require: false
-  gem "rubocop", ">= 1.14", require: false
+  gem "rubocop", ">= 1.22", require: false
   gem "rubocop-i18n", ">= 3.0", require: false
   gem "rubocop-performance", ">= 1.11.2", require: false
   gem "rubocop-rails", ">= 2.11", require: false
   gem "rubocop-rake", ">= 0.5", require: false
-  gem "standard", ">= 1.1.1", require: false
+  gem "standard", ">= 1.4.1", require: false
 end
 
 group :development do

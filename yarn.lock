@@ -35,59 +35,59 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/generator@^7.16.5":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.16.5.tgz#26e1192eb8f78e0a3acaf3eede3c6fc96d22bedf"
-  integrity sha512-kIvCdjZqcdKqoDbVVdt5R99icaRtrtYhYK/xux5qiWCBmfdvEYMFZ68QCrpE5cbFM1JsuArUNs1ZkuKtTtUcZA==
+"@babel/generator@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.16.7.tgz#b42bf46a3079fa65e1544135f32e7958f048adbb"
+  integrity sha512-/ST3Sg8MLGY5HVYmrjOgL60ENux/HfO/CsUh7y4MalThufhE/Ff/6EibFDHi4jiDCaWfJKoqbE6oTh21c5hrRg==
   dependencies:
-    "@babel/types" "^7.16.0"
+    "@babel/types" "^7.16.7"
     jsesc "^2.5.1"
     source-map "^0.5.0"
 
-"@babel/helper-annotate-as-pure@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.16.0.tgz#9a1f0ebcda53d9a2d00108c4ceace6a5d5f1f08d"
-  integrity sha512-ItmYF9vR4zA8cByDocY05o0LGUkp1zhbTQOH1NFyl5xXEqlTJQCEJjieriw+aFpxo16swMxUnUiKS7a/r4vtHg==
+"@babel/helper-annotate-as-pure@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.16.7.tgz#bb2339a7534a9c128e3102024c60760a3a7f3862"
+  integrity sha512-s6t2w/IPQVTAET1HitoowRGXooX8mCgtuP5195wD/QJPV6wYjpujCGF7JuMODVX2ZAJOf1GT6DT9MHEZvLOFSw==
   dependencies:
-    "@babel/types" "^7.16.0"
+    "@babel/types" "^7.16.7"
 
-"@babel/helper-builder-binary-assignment-operator-visitor@^7.16.5":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-builder-binary-assignment-operator-visitor/-/helper-builder-binary-assignment-operator-visitor-7.16.5.tgz#a8429d064dce8207194b8bf05a70a9ea828746af"
-  integrity sha512-3JEA9G5dmmnIWdzaT9d0NmFRgYnWUThLsDaL7982H0XqqWr56lRrsmwheXFMjR+TMl7QMBb6mzy9kvgr1lRLUA==
+"@babel/helper-builder-binary-assignment-operator-visitor@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-builder-binary-assignment-operator-visitor/-/helper-builder-binary-assignment-operator-visitor-7.16.7.tgz#38d138561ea207f0f69eb1626a418e4f7e6a580b"
+  integrity sha512-C6FdbRaxYjwVu/geKW4ZeQ0Q31AftgRcdSnZ5/jsH6BzCJbtvXvhpfkbkThYSuutZA7nCXpPR6AD9zd1dprMkA==
   dependencies:
-    "@babel/helper-explode-assignable-expression" "^7.16.0"
-    "@babel/types" "^7.16.0"
+    "@babel/helper-explode-assignable-expression" "^7.16.7"
+    "@babel/types" "^7.16.7"
 
-"@babel/helper-compilation-targets@^7.13.0", "@babel/helper-compilation-targets@^7.16.3":
-  version "7.16.3"
-  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.16.3.tgz#5b480cd13f68363df6ec4dc8ac8e2da11363cbf0"
-  integrity sha512-vKsoSQAyBmxS35JUOOt+07cLc6Nk/2ljLIHwmq2/NM6hdioUaqEXq/S+nXvbvXbZkNDlWOymPanJGOc4CBjSJA==
+"@babel/helper-compilation-targets@^7.13.0", "@babel/helper-compilation-targets@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.16.7.tgz#06e66c5f299601e6c7da350049315e83209d551b"
+  integrity sha512-mGojBwIWcwGD6rfqgRXVlVYmPAv7eOpIemUG3dGnDdCY4Pae70ROij3XmfrH6Fa1h1aiDylpglbZyktfzyo/hA==
   dependencies:
-    "@babel/compat-data" "^7.16.0"
-    "@babel/helper-validator-option" "^7.14.5"
+    "@babel/compat-data" "^7.16.4"
+    "@babel/helper-validator-option" "^7.16.7"
     browserslist "^4.17.5"
     semver "^6.3.0"
 
-"@babel/helper-create-class-features-plugin@^7.16.5":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.16.5.tgz#5d1bcd096792c1ebec6249eebc6358eec55d0cad"
-  integrity sha512-NEohnYA7mkB8L5JhU7BLwcBdU3j83IziR9aseMueWGeAjblbul3zzb8UvJ3a1zuBiqCMObzCJHFqKIQE6hTVmg==
+"@babel/helper-create-class-features-plugin@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.16.7.tgz#9c5b34b53a01f2097daf10678d65135c1b9f84ba"
+  integrity sha512-kIFozAvVfK05DM4EVQYKK+zteWvY85BFdGBRQBytRyY3y+6PX0DkDOn/CZ3lEuczCfrCxEzwt0YtP/87YPTWSw==
   dependencies:
-    "@babel/helper-annotate-as-pure" "^7.16.0"
-    "@babel/helper-environment-visitor" "^7.16.5"
-    "@babel/helper-function-name" "^7.16.0"
-    "@babel/helper-member-expression-to-functions" "^7.16.5"
-    "@babel/helper-optimise-call-expression" "^7.16.0"
-    "@babel/helper-replace-supers" "^7.16.5"
-    "@babel/helper-split-export-declaration" "^7.16.0"
+    "@babel/helper-annotate-as-pure" "^7.16.7"
+    "@babel/helper-environment-visitor" "^7.16.7"
+    "@babel/helper-function-name" "^7.16.7"
+    "@babel/helper-member-expression-to-functions" "^7.16.7"
+    "@babel/helper-optimise-call-expression" "^7.16.7"
+    "@babel/helper-replace-supers" "^7.16.7"
+    "@babel/helper-split-export-declaration" "^7.16.7"
 
-"@babel/helper-create-regexp-features-plugin@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-create-regexp-features-plugin/-/helper-create-regexp-features-plugin-7.16.0.tgz#06b2348ce37fccc4f5e18dcd8d75053f2a7c44ff"
-  integrity sha512-3DyG0zAFAZKcOp7aVr33ddwkxJ0Z0Jr5V99y3I690eYLpukJsJvAbzTy1ewoCqsML8SbIrjH14Jc/nSQ4TvNPA==
+"@babel/helper-create-regexp-features-plugin@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-regexp-features-plugin/-/helper-create-regexp-features-plugin-7.16.7.tgz#0cb82b9bac358eb73bfbd73985a776bfa6b14d48"
+  integrity sha512-fk5A6ymfp+O5+p2yCkXAu5Kyj6v0xh0RBeNcAkYUMDvvAAoxvSKXn+Jb37t/yWFiQVDFK1ELpUTD8/aLhCPu+g==
   dependencies:
-    "@babel/helper-annotate-as-pure" "^7.16.0"
+    "@babel/helper-annotate-as-pure" "^7.16.7"
     regexpu-core "^4.7.1"
 
 "@babel/helper-define-polyfill-provider@^0.3.0":

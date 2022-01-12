@@ -1,4 +1,4 @@
 buildpack 0.23.0
-nodejs 17.3.0
+nodejs 17.3.1
 ruby 3.1.0
 yarn 1.22.17

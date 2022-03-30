@@ -12,7 +12,7 @@ gem "haml-rails", "~> 2.0"
 gem "honeybadger", "~> 4.9"
 # gem "image_processing", "~> 1.2" # Use Active Storage variant
 gem "jbuilder", "~> 2.11" # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "puma", "~> 5.3" # Use Puma as the app server
+gem "puma", "~> 5.6" # Use Puma as the app server
 gem "rack-contrib", "~> 2.3" # rack middleware for locale based on HTTP_ACCEPT_LANGUAGE
 gem "rails-i18n", "~> 6.0" # localization data
 # gem "redis", "~> 4.0" # Use Redis adapter to run Action Cable in production

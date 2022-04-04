@@ -117,7 +117,7 @@ GEM
       rainbow
       rubocop (>= 0.50.0)
       sysexits (~> 1.1)
-    honeybadger (4.12.0)
+    honeybadger (4.12.1)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -133,7 +133,7 @@ GEM
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.15.0)
+    loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)

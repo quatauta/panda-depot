@@ -1,4 +1,4 @@
 buildpack 0.26.0
 nodejs 18.1.0
 ruby 3.1.2
-yarn 1.22.18
+yarn 1.22.19
